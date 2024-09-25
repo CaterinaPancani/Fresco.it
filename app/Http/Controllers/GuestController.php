@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Mail;
 class GuestController extends Controller
 {
     public function dashboard(){
+        
         if(Auth::user()){
             $user_id=Auth::user()->id;
             $ad=Ads::where('checked',null);
@@ -46,6 +47,7 @@ class GuestController extends Controller
         }
     }
 
+//  work with us
     public function lavoraConNoi(){
         $user=Auth::user();
         return view('lavoraConNoi', compact('user'));

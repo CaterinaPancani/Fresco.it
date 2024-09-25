@@ -32,25 +32,25 @@
         @case(4)
 
             {{-- crea annuncio --}}
-            <x-announcements.create-form/>
+            <x-announcements.list.create-form/>
         @break
         @case(5)
 
             {{-- revisiona annunci --}}
-            <x-announcements.index-table :ads="$ads"/>
+            <x-announcements.list.index-table :ads="$ads"/>
         @break
         @case(6)
 
             <button class="btn btn-outline-success" wire:click="requestIndex">Mostra richieste revisore</button>
             <button class="btn btn-outline-success" wire:click="appliesIndex">Mostra candidature</button>
-            <x-announcements.Admin-requestIndex :ads="$ads" :requests="$requests"/>
+            <x-announcements.list.admin-requestIndex :ads="$ads" :requests="$requests"/>
         @break
         @case(7)
 
             <button class="btn btn-outline-success" wire:click="requestIndex">Mostra richieste revisore</button>
             <button class="btn btn-outline-success" wire:click="appliesIndex">Mostra candidature</button>
 
-            <x-announcements.Admin-appliesIndex :ads="$ads" :applies="$applies"/>
+            <x-announcements.list.admin-appliesIndex :ads="$ads" :applies="$applies"/>
         @break
         @default
             <div style="margin:5%">
