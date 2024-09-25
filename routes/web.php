@@ -47,5 +47,5 @@ use App\Http\Controllers\LanguageController;
     });
 
 // lingua
-    Route::post('lingua/{lang}',[LanguageController::class,'setLanguage'])->name('lingua');
+    Route::post('lingua/{lang}',[main::class,'setLanguage'])->name('lingua');
 

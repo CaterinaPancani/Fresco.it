@@ -24,6 +24,11 @@ class main extends Controller
         Livewire::component('home', HomeLivewire::class);
         return view('home');
     }
+    // linguaggio
+    public function setLanguage($lang){
+        session()->put('local',$lang);
+        return redirect()->back();
+    }
     // annunci
     public function ads(Request $request){
         if($request->searched){

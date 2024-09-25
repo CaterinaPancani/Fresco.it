@@ -11,7 +11,7 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-            <title>Document</title>
+            <title>Fresco.it</title>
         </head>
         <body class="d-flex flex-column" style="min-height: 100vh; margin: 0; display: flex; flex-direction: column;">
             <x-layout.navbar/>
