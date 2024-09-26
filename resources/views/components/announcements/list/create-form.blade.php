@@ -1,4 +1,5 @@
 <div class="container">
+    
     <div class="row">
         <div class="col-lg-10 col-xl-9 mx-auto">
             <div class="flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
@@ -55,4 +56,7 @@
             </div>
         </div>
     </div>
+    <button class="bottoneblu btn btn-outline-dark btn-lg background-primary color-accent" weight="45" wire:click="create">
+        {{__('ui.GoToCreate')}}
+    </button>
 </div>

@@ -6,13 +6,18 @@
 
 
 body{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
     background-color: var(--accent);
     height: 100vh;
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 400;
     font-style: normal;
     transition: background-color .5s;
-
+}
+nav{
+    height: 60px;
 }
 
   .sidenav {
@@ -25,7 +30,7 @@ body{
     background-color: #003c43;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 100px;
   }
 
   .sidenav a {
